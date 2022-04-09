@@ -1,6 +1,4 @@
-require "./ext/string"
-require "./croin/pow"
-require "./croin/block"
+require "./croin/*"
 
 # TODO: Write documentation for `Croin`
 module Croin
