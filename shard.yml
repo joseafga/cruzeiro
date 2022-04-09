@@ -1,12 +1,12 @@
-name: croin
+name: cruzeiro
 version: 0.1.0
 
 authors:
   - José Almeida <jose.afga@gmail.com>
 
 targets:
-  croin:
-    main: src/croin.cr
+  cruzeiro:
+    main: src/cruzeiro.cr
 
 dependencies:
   kemal:

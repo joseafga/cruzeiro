@@ -1,2 +1,2 @@
 require "spec"
-require "../src/croin"
+require "../src/cruzeiro"

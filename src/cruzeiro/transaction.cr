@@ -1,6 +1,6 @@
 require "json"
 
-module Croin
+module Cruzeiro
   class Block
     class Transaction
       include JSON::Serializable

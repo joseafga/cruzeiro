@@ -1,12 +1,12 @@
 require "kemal"
 require "uuid"
-require "./croin"
+require "./cruzeiro"
 
 # Generate a globally unique address for this node
 NODE_UUID = UUID.random.to_s
 
 # Create our Blockchain
-blockchain = Croin::Blockchain.new
+blockchain = Cruzeiro::Blockchain.new
 
 before_all do |env|
   puts "Setting response content type"
@@ -14,7 +14,7 @@ before_all do |env|
 end
 
 get "/" do
-  {info: "Croin - Cryptocurrency Blockchain - Node #{NODE_UUID}"}.to_json
+  {info: "Cruzeiro Cryptocurrency - Node #{NODE_UUID}"}.to_json
 end
 
 get "/chain" do
@@ -32,7 +32,7 @@ end
 
 post "/transactions/new" do |env|
   body = env.request.body.not_nil!
-  blockchain << Croin::Block::Transaction.from_json(body)
+  blockchain << Cruzeiro::Block::Transaction.from_json(body)
 
   {success: "Transaction #{blockchain.uncommitted_transactions.last} has been added to the node"}.to_json
 end

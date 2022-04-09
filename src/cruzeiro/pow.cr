@@ -1,6 +1,6 @@
 require "digest/sha256"
 
-module Croin
+module Cruzeiro
   module ProofOfWork
     private def proof_of_work(difficulty = "00")
       nonce = 0_u32

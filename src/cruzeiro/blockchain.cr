@@ -1,4 +1,4 @@
-module Croin
+module Cruzeiro
   class Blockchain
     getter chain
     getter uncommitted_transactions

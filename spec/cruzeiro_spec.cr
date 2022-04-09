@@ -1,6 +1,6 @@
 require "./spec_helper"
 
-describe Croin do
+describe Cruzeiro do
   # TODO: Write tests
 
   it "works" do

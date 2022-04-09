@@ -1,7 +1,7 @@
 require "json"
 require "./pow"
 
-module Croin
+module Cruzeiro
   class Block
     include ProofOfWork
     include JSON::Serializable
